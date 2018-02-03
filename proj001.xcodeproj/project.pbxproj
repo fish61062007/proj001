@@ -18,6 +18,8 @@
 		22559733202558A800047CC4 /* chooseSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22559732202558A800047CC4 /* chooseSchool.swift */; };
 		2255973520255E8E00047CC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2255973420255E8E00047CC4 /* GoogleService-Info.plist */; };
 		2255973720256EF300047CC4 /* chooseSchool01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973620256EF300047CC4 /* chooseSchool01.swift */; };
+		2255973920259F5300047CC4 /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973820259F5300047CC4 /* event.swift */; };
+		2255973B2025A23700047CC4 /* event01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973A2025A23700047CC4 /* event01.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		22559732202558A800047CC4 /* chooseSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSchool.swift; sourceTree = "<group>"; };
 		2255973420255E8E00047CC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2255973620256EF300047CC4 /* chooseSchool01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSchool01.swift; sourceTree = "<group>"; };
+		2255973820259F5300047CC4 /* event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
+		2255973A2025A23700047CC4 /* event01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				225597022025526800047CC4 /* AppDelegate.swift */,
 				225597042025526800047CC4 /* ViewController.swift */,
 				225597062025526800047CC4 /* Main.storyboard */,
+				2255973A2025A23700047CC4 /* event01.swift */,
+				2255973820259F5300047CC4 /* event.swift */,
 				22559732202558A800047CC4 /* chooseSchool.swift */,
 				2255973620256EF300047CC4 /* chooseSchool01.swift */,
 				225597302025587D00047CC4 /* signIn.swift */,
@@ -274,7 +280,9 @@
 			files = (
 				225597052025526800047CC4 /* ViewController.swift in Sources */,
 				2255973720256EF300047CC4 /* chooseSchool01.swift in Sources */,
+				2255973920259F5300047CC4 /* event.swift in Sources */,
 				225597032025526800047CC4 /* AppDelegate.swift in Sources */,
+				2255973B2025A23700047CC4 /* event01.swift in Sources */,
 				22559733202558A800047CC4 /* chooseSchool.swift in Sources */,
 				225597312025587D00047CC4 /* signIn.swift in Sources */,
 			);
