@@ -18,6 +18,7 @@
 		22559733202558A800047CC4 /* chooseSchool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22559732202558A800047CC4 /* chooseSchool.swift */; };
 		2255973520255E8E00047CC4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2255973420255E8E00047CC4 /* GoogleService-Info.plist */; };
 		2255973720256EF300047CC4 /* chooseSchool01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973620256EF300047CC4 /* chooseSchool01.swift */; };
+		2255973D2025AFB800047CC4 /* tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973C2025AFB800047CC4 /* tabbar.swift */; };
 		52CD93FC202597BB00D97BB6 /* successSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FB202597BB00D97BB6 /* successSignup.swift */; };
 		52CD93FE20259B9400D97BB6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FD20259B9400D97BB6 /* TableViewController.swift */; };
 		52CD940020259E4500D97BB6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FF20259E4500D97BB6 /* EventsViewController.swift */; };
@@ -60,6 +61,7 @@
 		22559732202558A800047CC4 /* chooseSchool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSchool.swift; sourceTree = "<group>"; };
 		2255973420255E8E00047CC4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2255973620256EF300047CC4 /* chooseSchool01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSchool01.swift; sourceTree = "<group>"; };
+		2255973C2025AFB800047CC4 /* tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbar.swift; sourceTree = "<group>"; };
 		52CD93FB202597BB00D97BB6 /* successSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = successSignup.swift; sourceTree = "<group>"; };
 		52CD93FD20259B9400D97BB6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		52CD93FF20259E4500D97BB6 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -118,11 +120,10 @@
 				225597022025526800047CC4 /* AppDelegate.swift */,
 				225597042025526800047CC4 /* ViewController.swift */,
 				225597062025526800047CC4 /* Main.storyboard */,
-				2255973A2025A23700047CC4 /* event01.swift */,
-				2255973820259F5300047CC4 /* event.swift */,
 				22559732202558A800047CC4 /* chooseSchool.swift */,
 				2255973620256EF300047CC4 /* chooseSchool01.swift */,
 				225597302025587D00047CC4 /* signIn.swift */,
+				2255973C2025AFB800047CC4 /* tabbar.swift */,
 				225597092025526800047CC4 /* Assets.xcassets */,
 				2255970B2025526800047CC4 /* LaunchScreen.storyboard */,
 				2255970E2025526800047CC4 /* Info.plist */,
@@ -291,10 +292,10 @@
 			files = (
 				225597052025526800047CC4 /* ViewController.swift in Sources */,
 				52CD940020259E4500D97BB6 /* EventsViewController.swift in Sources */,
+				2255973D2025AFB800047CC4 /* tabbar.swift in Sources */,
 				52CD93FE20259B9400D97BB6 /* TableViewController.swift in Sources */,
 				52CD94042025A46C00D97BB6 /* TabBarController.swift in Sources */,
 				2255973720256EF300047CC4 /* chooseSchool01.swift in Sources */,
-				2255973920259F5300047CC4 /* event.swift in Sources */,
 				225597032025526800047CC4 /* AppDelegate.swift in Sources */,
 				52CD93FC202597BB00D97BB6 /* successSignup.swift in Sources */,
 				52CD94022025A15C00D97BB6 /* HomeTableViewController.swift in Sources */,

@@ -41,7 +41,7 @@ class signIn: UIViewController {
                 
                 let alertController = UIAlertController(title: "Success",message: "You have seccessfully loged in.",preferredStyle: .alert)
                 let defaultAction = UIAlertAction(title: "OK", style: .cancel, handler: {(UIAlertAction) in
-                    let logInSuccess = self.storyboard?.instantiateViewController(withIdentifier: "chooseSchool")
+                    let logInSuccess = self.storyboard?.instantiateViewController(withIdentifier: "tabbar")
                     self.present(logInSuccess!, animated: true, completion: nil)
                 })
                 
