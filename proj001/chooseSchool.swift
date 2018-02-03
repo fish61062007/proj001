@@ -8,7 +8,11 @@
 
 import UIKit
 
-class chooseSchool: UIViewController {
+class chooseSchool: UIViewController{
+    
+    let dataNorth:[String] = ["01","02","03","04"]
+    let dataMid = ["05","06","07","08"]
+    
     
     @IBAction func backToChoose(segue: UIStoryboardSegue){
     }
@@ -22,13 +26,15 @@ class chooseSchool: UIViewController {
     @IBAction func chooseButton(_ sender: Any) {
         
         let rr = storyboard?.instantiateViewController(withIdentifier: "chooseSchool01") as! chooseSchool01
-        
+
 
         if sender as? UIButton == northButton {
             rr.titleText = "北部"
+            rr.data = dataNorth
         }
         if sender as? UIButton == midButton {
             rr.titleText = "中部"
+            rr.data = dataMid
         }
         if sender as? UIButton == southButton {
             rr.titleText = "南部"
@@ -38,6 +44,9 @@ class chooseSchool: UIViewController {
         }
 
         self.present(rr, animated: true, completion: nil)
+        
+
+        
     }
    
     

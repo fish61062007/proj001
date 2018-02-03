@@ -12,32 +12,46 @@ class chooseSchool01: UIViewController,UIPickerViewDelegate,UIPickerViewDataSour
     
     var titleText: String?
     
-    let data1 = ["school01","school02","school03","school04"]
+    var data:[String]?
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
     
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return data1.count
+        return (data?.count)!
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return data1[row]
+        return data?[row]
     }
     
     
+    @IBOutlet weak var schoolPicker: UIPickerView!
     
     
     @IBOutlet weak var titlee: UILabel!
-    
-    
-    
     @IBOutlet weak var schools: UIPickerView!
+    
+    var pickedSchool:String?
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        pickedSchool = data?[row]
+    }
+    
+    @IBAction func okButton(_ sender: Any) {
+        let eventTrue = storyboard?.instantiateViewController(withIdentifier: "event")
+        if pickedSchool == "05"{
+            
+        }
+        present(eventTrue!, animated: true, completion: nil)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         titlee.text = titleText
+        
         
         
 
