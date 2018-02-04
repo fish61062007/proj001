@@ -48,7 +48,7 @@
         <!--Sign In-->
         <scene sceneID="wJc-Ct-iRn">
             <objects>
-                <viewController id="Qy0-Jk-eny" customClass="signIn" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Qy0-Jk-eny" customClass="SignIn" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="07O-v5-JEF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,7 +284,7 @@
         <!--活動列表-->
         <scene sceneID="nJ5-RM-q2p">
             <objects>
-                <viewController storyboardIdentifier="eventHome" id="yRO-rh-Oxr" customClass="eventHome" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="eventHome" id="yRO-rh-Oxr" customClass="EventHome" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="037-Nt-kXo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,7 +348,7 @@
         <!--Choose School-->
         <scene sceneID="SR2-7b-6eA">
             <objects>
-                <viewController storyboardIdentifier="chooseSchool" id="FAi-L9-ziQ" customClass="chooseSchool" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chooseSchool" id="FAi-L9-ziQ" customClass="ChooseSchool" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sRe-3w-VXz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -423,7 +423,7 @@
         <!--Choose School01-->
         <scene sceneID="IiW-IK-2to">
             <objects>
-                <viewController storyboardIdentifier="chooseSchool01" id="oYL-ll-3Qm" customClass="chooseSchool01" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="chooseSchool01" id="oYL-ll-3Qm" customClass="ChooseSchool01" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XZF-B5-w1M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -474,10 +474,10 @@
             </objects>
             <point key="canvasLocation" x="-263.19999999999999" y="213.64317841079463"/>
         </scene>
-        <!--Tabbar-->
+        <!--Tab Bar-->
         <scene sceneID="VaK-5t-UwM">
             <objects>
-                <tabBarController storyboardIdentifier="tabbar" id="2T2-cc-sZe" customClass="tabbar" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabbar" id="2T2-cc-sZe" customClass="TabBar" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nRl-hG-3aa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -587,7 +587,6 @@
                     </view>
                     <connections>
                         <outlet property="department2" destination="KC3-Yc-4M2" id="AEy-GZ-rBF"/>
-                        <outlet property="email" destination="x26-tf-BjZ" id="EuR-YA-axZ"/>
                         <outlet property="email2" destination="x26-tf-BjZ" id="8DB-vJ-PI4"/>
                         <outlet property="name2" destination="y0m-MC-gre" id="D5u-wQ-UTs"/>
                         <outlet property="phone2" destination="cXz-HD-LbV" id="XHF-ft-QLQ"/>
@@ -601,7 +600,7 @@
         <!--Success Signup-->
         <scene sceneID="NR1-9m-upl">
             <objects>
-                <viewController id="N91-Bm-mfN" customClass="successSignup" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="N91-Bm-mfN" customClass="SuccessSignup" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygd-ds-mJH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
