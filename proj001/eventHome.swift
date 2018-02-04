@@ -10,6 +10,14 @@ import UIKit
 
 class eventHome: UIViewController, UITableViewDelegate, UITableViewDataSource, UIPickerViewDelegate, UIPickerViewDataSource {
     
+
+    
+
+    
+    @IBOutlet weak var categoryPicker: UIPickerView!
+    let categoryData = ["推薦","收藏","追蹤"]
+    
+    //PickerView
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -22,14 +30,9 @@ class eventHome: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         return categoryData[row]
     }
     
-
-    
-    @IBOutlet weak var categoryPicker: UIPickerView!
-    let categoryData = ["推薦","收藏","追蹤"]
-    
-    
+    //
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 10
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -41,17 +44,14 @@ class eventHome: UIViewController, UITableViewDelegate, UITableViewDataSource, U
         return cell!
     }
     
-    var rotationAngle:CGFloat!
+//    var rotationAngle:CGFloat!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rotationAngle = 90 * (.pi/180)
-        categoryPicker.transform = CGAffineTransform(rotationAngle: rotationAngle)
-        categoryPicker.description.
-//        let y = categoryPicker.frame.origin.y
-//
-//        categoryPicker.frame = CGRect(x: -100, y: y, width: view.frame.width + 200, height: 100)
+//        rotationAngle = 90 * (.pi/180)
+//        categoryPicker.transform = CGAffineTransform(rotationAngle: rotationAngle)
+
        
         // Do any additional setup after loading the view.
     }

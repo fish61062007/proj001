@@ -20,6 +20,8 @@
 		2255973720256EF300047CC4 /* chooseSchool01.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973620256EF300047CC4 /* chooseSchool01.swift */; };
 		2255973D2025AFB800047CC4 /* tabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973C2025AFB800047CC4 /* tabbar.swift */; };
 		2255973F2026A3C500047CC4 /* eventHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2255973E2026A3C500047CC4 /* eventHome.swift */; };
+		52230F172026B8F20018F99E /* Sign1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52230F162026B8F20018F99E /* Sign1ViewController.swift */; };
+		52230F192026B8FD0018F99E /* Sign2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52230F182026B8FD0018F99E /* Sign2ViewController.swift */; };
 		52CD93FC202597BB00D97BB6 /* successSignup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FB202597BB00D97BB6 /* successSignup.swift */; };
 		52CD93FE20259B9400D97BB6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FD20259B9400D97BB6 /* TableViewController.swift */; };
 		52CD940020259E4500D97BB6 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CD93FF20259E4500D97BB6 /* EventsViewController.swift */; };
@@ -64,6 +66,8 @@
 		2255973620256EF300047CC4 /* chooseSchool01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chooseSchool01.swift; sourceTree = "<group>"; };
 		2255973C2025AFB800047CC4 /* tabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabbar.swift; sourceTree = "<group>"; };
 		2255973E2026A3C500047CC4 /* eventHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eventHome.swift; sourceTree = "<group>"; };
+		52230F162026B8F20018F99E /* Sign1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign1ViewController.swift; sourceTree = "<group>"; };
+		52230F182026B8FD0018F99E /* Sign2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sign2ViewController.swift; sourceTree = "<group>"; };
 		52CD93FB202597BB00D97BB6 /* successSignup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = successSignup.swift; sourceTree = "<group>"; };
 		52CD93FD20259B9400D97BB6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		52CD93FF20259E4500D97BB6 /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 				52CD94012025A15C00D97BB6 /* HomeTableViewController.swift */,
 				52CD94032025A46C00D97BB6 /* TabBarController.swift */,
 				52CD93FF20259E4500D97BB6 /* EventsViewController.swift */,
+				52230F162026B8F20018F99E /* Sign1ViewController.swift */,
+				52230F182026B8FD0018F99E /* Sign2ViewController.swift */,
 			);
 			path = proj001;
 			sourceTree = "<group>";
@@ -293,7 +299,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52230F192026B8FD0018F99E /* Sign2ViewController.swift in Sources */,
 				225597052025526800047CC4 /* ViewController.swift in Sources */,
+				52230F172026B8F20018F99E /* Sign1ViewController.swift in Sources */,
 				52CD940020259E4500D97BB6 /* EventsViewController.swift in Sources */,
 				2255973D2025AFB800047CC4 /* tabbar.swift in Sources */,
 				52CD93FE20259B9400D97BB6 /* TableViewController.swift in Sources */,
