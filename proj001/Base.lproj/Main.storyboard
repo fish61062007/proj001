@@ -161,34 +161,6 @@
             </objects>
             <point key="canvasLocation" x="-130" y="3160"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Il8-4A-dPC">
-            <objects>
-                <tableViewController id="c6R-lQ-6gG" customClass="TableViewController" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Kgh-QK-dMG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <button key="tableFooterView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nbK-EE-oZP">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <connections>
-                                <action selector="events:" destination="c6R-lQ-6gG" eventType="touchUpInside" id="6pX-bb-gjK"/>
-                                <segue destination="5F9-K2-2a6" kind="show" id="yyj-xa-tws"/>
-                            </connections>
-                        </button>
-                        <connections>
-                            <outlet property="dataSource" destination="c6R-lQ-6gG" id="4AG-LX-I9W"/>
-                            <outlet property="delegate" destination="c6R-lQ-6gG" id="E4u-gx-Z3x"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="q6z-Mi-LlI"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JKJ-PD-U6e" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="933.60000000000002" y="993.55322338830592"/>
-        </scene>
         <!--Item-->
         <scene sceneID="mnR-9j-NY4">
             <objects>
@@ -199,12 +171,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="c6R-lQ-6gG" kind="relationship" relationship="rootViewController" id="PDn-5n-Rho"/>
+                        <segue destination="yRO-rh-Oxr" kind="relationship" relationship="rootViewController" id="CKD-4v-0dY"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BPt-RY-cDT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="994"/>
+            <point key="canvasLocation" x="-215" y="994"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d5Y-nm-6fK">
@@ -300,7 +272,45 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="28C-rf-pit" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687" y="994"/>
+            <point key="canvasLocation" x="2146" y="994"/>
+        </scene>
+        <!--活動列表-->
+        <scene sceneID="nJ5-RM-q2p">
+            <objects>
+                <viewController storyboardIdentifier="eventHome" id="yRO-rh-Oxr" customClass="eventHome" customModule="proj001" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="037-Nt-kXo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xqi-Jz-SJW">
+                                <rect key="frame" x="0.0" y="253" width="375" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yRO-rh-Oxr" id="ain-LS-Gwv"/>
+                                    <outlet property="delegate" destination="yRO-rh-Oxr" id="QPI-Wc-fXI"/>
+                                </connections>
+                            </tableView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aQx-Dq-6W4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="209"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="yRO-rh-Oxr" id="eTV-71-pwW"/>
+                                    <outlet property="delegate" destination="yRO-rh-Oxr" id="p7b-vO-cBL"/>
+                                </connections>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="O2p-Ax-vwo"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="活動列表" id="blh-pe-Tav"/>
+                    <connections>
+                        <outlet property="categoryPicker" destination="aQx-Dq-6W4" id="BtA-GE-5R1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YR6-2B-FIe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.79999999999995" y="993.55322338830592"/>
         </scene>
         <!--Events View Controller-->
         <scene sceneID="VAV-Z2-0as">
@@ -326,7 +336,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuO-wm-pOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8" y="993.55322338830592"/>
+            <point key="canvasLocation" x="1327" y="994"/>
         </scene>
         <!--Choose School-->
         <scene sceneID="SR2-7b-6eA">
@@ -571,7 +581,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xrX-OD-5dN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3493.5999999999999" y="993.55322338830592"/>
+            <point key="canvasLocation" x="2985" y="994"/>
         </scene>
         <!--Success Signup-->
         <scene sceneID="NR1-9m-upl">
@@ -604,7 +614,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ku8-BJ-9ZY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4222" y="994"/>
+            <point key="canvasLocation" x="3788" y="994"/>
         </scene>
     </scenes>
 </document>
